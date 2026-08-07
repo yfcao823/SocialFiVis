@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="SocialFiVis is an IAD-embedded visual analytics sandbox for exploring counterfactual governance in SocialFi communities.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="SocialFi, visual analytics, LLM agents, multi-agent simulation, counterfactual reasoning, digital commons governance">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Yi-Fan Cao, Qing Shi, Liangwei Wang, Leo Yu-Ho Lo, Lin Chen, Yuzi Han, Yang Wang, Kani Chen">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="SocialFiVis">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="SocialFiVis: Visual Analytics for Social Finance">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="An IAD-embedded visual analytics sandbox for counterfactual policy exploration in SocialFi communities.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://github.com/sqsssq/SocialFiVis">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="teaser.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SocialFiVis system overview">
+  <meta property="article:published_time" content="2026-07-02T00:00:00.000Z">
+  <meta property="article:author" content="Yi-Fan Cao">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="SocialFi">
+  <meta property="article:tag" content="multi-agent simulation">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@SocialFiVis">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@SocialFiVis">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="SocialFiVis: Visual Analytics for Social Finance">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="An IAD-embedded visual analytics sandbox for counterfactual policy exploration in SocialFi communities.">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="teaser.jpg">
+  <meta name="twitter:image:alt" content="SocialFiVis system overview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance">
+  <meta name="citation_author" content="Cao, Yi-Fan">
+  <meta name="citation_author" content="Shi, Qing">
+  <meta name="citation_author" content="Wang, Liangwei">
+  <meta name="citation_author" content="Lo, Leo Yu-Ho">
+  <meta name="citation_author" content="Chen, Lin">
+  <meta name="citation_author" content="Han, Yuzi">
+  <meta name="citation_author" content="Wang, Yang">
+  <meta name="citation_author" content="Chen, Kani">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="IEEE Transactions on Visualization and Computer Graphics">
+  <meta name="citation_pdf_url" content="SocialFiVis_VIS26.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>SocialFiVis | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance",
+    "description": "SocialFiVis is an IAD-embedded visual analytics sandbox for exploring counterfactual governance in SocialFi communities.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Yi-Fan Cao"
+      },
+      {
+        "@type": "Person",
+        "name": "Qing Shi"
+      }
+    ],
+    "datePublished": "2026-07-02",
+    "publisher": {
+      "@type": "Organization",
+      "name": "IEEE Transactions on Visualization and Computer Graphics"
+    },
+    "url": "https://github.com/sqsssq/SocialFiVis",
+    "image": "teaser.jpg",
+    "keywords": ["SocialFi", "visual analytics", "LLM agents", "counterfactual reasoning", "digital commons governance"],
+    "abstract": "SocialFiVis operationalizes the Institutional Analysis and Development framework as a visual analytics sandbox for counterfactual governance exploration.",
+    "citation": "Cao et al., SocialFiVis, 2026",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://github.com/sqsssq/SocialFiVis"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "LLM-grounded agent simulation"
+      },
+      {
+        "@type": "Thing", 
+        "name": "SocialFi digital commons governance"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SocialFiVis research project",
+    "url": "https://github.com/sqsssq/SocialFiVis",
+    "logo": "static/images/favicon.ico",
+    "sameAs": [
+      "https://github.com/sqsssq/SocialFiVis"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero publication-hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop title-container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance</h1>
+            <div class="is-size-5 publication-authors author-grid">
+              <span class="author-block">Yi-Fan Cao<sup>1</sup></span>
+              <span class="author-block">Qing Shi<sup>2</sup></span>
+              <span class="author-block">Liangwei Wang<sup>2</sup></span>
+              <span class="author-block">Leo Yu-Ho Lo<sup>1</sup></span>
+              <span class="author-block">Lin Chen<sup>3</sup></span>
+              <span class="author-block">Yuzi Han<sup>1</sup></span>
+              <span class="author-block">Yang Wang<sup>4</sup></span>
+              <span class="author-block">Kani Chen<sup>1</sup></span>
+            </div>
+
+            <div class="publication-authors affiliation-list">
+              <div><sup>1</sup> The Hong Kong University of Science and Technology</div>
+              <div><sup>2</sup> The Hong Kong University of Science and Technology (Guangzhou)</div>
+              <div><sup>3</sup> Northeastern University</div>
+              <div><sup>4</sup> The University of Hong Kong</div>
+              <div class="publication-venue"><em>IEEE Transactions on Visualization and Computer Graphics (Proc. IEEE VIS 2026)</em></div>
+            </div>
+
+                  <div class="column has-text-centered publication-links-column">
+                    <div class="publication-links">
+                      <span class="link-block">
+                        <a href="SocialFiVis_VIS26.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <span class="link-block">
+                      <a href=""
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                        <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href=""
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image -->
+<section class="hero teaser">
+  <div class="container is-max-desktop abstract-container">
+    <div class="hero-body">
+      <img src="teaser.jpg" id="tree" alt="SocialFiVis teaser visualization" loading="eager">
+      <h2 class="subtitle has-text-centered">
+        SocialFiVis lets community operators back-test governance policies and trace macro-level outcomes to the reasoning and actions of individual agents.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full abstract-column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The emergence of social finance (SocialFi) transforms online communities into complex socio-economic systems. Within these spaces, collective decisions shape a “digital commons” characterized by social capital (e.g., community trust) and financial health (e.g., market liquidity). Governing such hybrid ecosystems is challenging because real-world interventions are costly and irreversible. While counterfactual simulation is essential for exploring alternative governance strategies, existing approaches fail to capture the complex, non-linear interplay between governance rules, individual behaviors, and emergent economic outcomes. To systematically unpack this complexity, we operationalize the Institutional Analysis and Development (IAD) framework as our theoretical foundation, synthesizing prior literature with insights from formative expert interviews. Built on this framework, we present SocialFiVis, an IAD-embedded visual analytics sandbox. It introduces a robust model to quantify the dual-track digital commons, coupled with a two-phase simulation engine. This engine combines LLM-derived personas with a mechanism-guided Perception–Reasoning–Action (PRA) runtime to simulate heterogeneous, context-aware agents empirically grounded in the retained messaging cohort. A hierarchical multi-view interface with interpretable reasoning pathways enables stakeholders to explore counterfactual policies and trace system-level outcomes back to individual behavioral rationales. We validate SocialFiVis through case studies, expert interviews, and a user study. Results demonstrate that SocialFiVis supports fine-grained behavioral attribution and helps explain emergent phenomena such as the structural decoupling of social capital and the resilience of messaging members under localized governance shocks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Paper video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 video-title">Demo Video</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          
+          <div class="publication-video">
+            <video controls muted preload="metadata" style="width:100%;">
+              <source src="walkthrough_mr.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@article{cao2026socialfivis,
+  title={SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance},
+  author={Cao, Yi-Fan and Shi, Qing and Wang, Liangwei and Lo, Leo Yu-Ho and Chen, Lin and Han, Yuzi and Wang, Yang and Chen, Kani},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2026},
+  url={https://github.com/sqsssq/SocialFiVis}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
