@@ -1,80 +1,79 @@
-# Academic Project Page Template
+# SocialFiVis
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+> An academic project page for **SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance**.
 
-A clean, responsive template for academic project pages.
+SocialFiVis is an IAD-embedded visual analytics sandbox for exploring counterfactual governance in SocialFi communities. The project models the coupling between social capital and financial health, combines LLM-derived personas with a mechanism-guided Perception–Reasoning–Action (PRA) runtime, and helps users trace system-level outcomes back to individual agent rationales.
 
+## Project page
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+- Paper: [`SocialFiVis_VIS26.pdf`](./SocialFiVis_VIS26.pdf)
+- Source repository: [github.com/sqsssq/SocialFiVis](https://github.com/sqsssq/SocialFiVis)
+- Local demo: run the project locally using the instructions below
 
+## Highlights
 
+- Counterfactual policy exploration grounded in the Institutional Analysis and Development (IAD) framework
+- Dual-track digital commons modeling for social capital and financial health
+- Heterogeneous, empirically grounded agent personas
+- Mechanism-guided PRA simulation for context-aware agent behavior
+- Hierarchical visual analytics connecting macro outcomes, persona cohorts, and micro-level reasoning
+- Responsive academic project page with paper, demo video, citation, and custom favicon
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## Run locally
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+The project is a static HTML page and does not require a build step or package installation.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+```bash
+python3 -m http.server 8000
+```
 
-## What's New
+Then open [http://localhost:8000](http://localhost:8000) in a browser. Run the command from the repository root.
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+## Project structure
 
-## Components
+```text
+.
+├── index.html                 # Academic project page
+├── SocialFiVis_VIS26.pdf      # Paper PDF
+├── teaser.jpg                 # Teaser image
+├── walkthrough_mr.mp4         # Demo video
+├── static/
+│   ├── css/                   # Bulma, page styles, and component styles
+│   ├── images/                # Favicon and visual assets
+│   ├── js/                    # Carousel, slider, and page scripts
+│   ├── pdfs/                  # Embedded PDF assets
+│   └── videos/                # Template video assets
+└── LICENSE
+```
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
+## Editing the page
+
+Most content is defined directly in [`index.html`](./index.html). Update the following areas when preparing a new version:
+
+- paper title, authors, affiliations, and publication information
+- abstract and project description
+- paper, supplementary, arXiv, code, and demo links
+- teaser image and demo video paths
 - BibTeX citation
+- SEO metadata and social preview metadata in the `<head>`
 
-## Customization
+Page-wide styling is in [`static/css/index.css`](./static/css/index.css). The page uses Google Fonts for Lato and EB Garamond, with local system fallbacks when the fonts are unavailable.
 
-The HTML file has TODO comments showing what to replace:
+## Citation
 
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+```bibtex
+@article{cao2026socialfivis,
+  title   = {SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance},
+  author  = {Cao, Yi-Fan and Shi, Qing and Wang, Liangwei and Lo, Leo Yu-Ho and Chen, Lin and Han, Yuzi and Wang, Yang and Chen, Kani},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  year    = {2026}
+}
+```
 
 ## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+The project page is based on the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template), which was adapted from the [Nerfies](https://nerfies.github.io/) project page.
+
+## License
+
+The project page is distributed under the [MIT License](./LICENSE). The adapted website template remains subject to the attribution and share-alike terms described in the page footer.
