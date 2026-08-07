@@ -1,3 +1,4 @@
+
 # SocialFiVis
 
 > An academic project page for **SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance**.
