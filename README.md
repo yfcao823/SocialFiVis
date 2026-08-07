@@ -4,6 +4,7 @@
 
 SocialFiVis is an IAD-embedded visual analytics sandbox for exploring counterfactual governance in SocialFi communities. The project models the coupling between social capital and financial health, combines LLM-derived personas with a mechanism-guided Perception–Reasoning–Action (PRA) runtime, and helps users trace system-level outcomes back to individual agent rationales.
 
+
 ## Project page
 
 - Paper: [`SocialFiVis_VIS26.pdf`](./SocialFiVis_VIS26.pdf)
